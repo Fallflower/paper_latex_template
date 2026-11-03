@@ -1,0 +1,26 @@
+\documentclass[journal,twoside,web]{ieeecolor}
+\usepackage{generic}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{textcomp}
+\usepackage{microtype}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\newcommand{\paperSubfigure}[4]{\subfloat[#3\label{#4}]{\includegraphics[width=#1]{#2}}}
+\begin{document}
+\title{Manuscript Title}
+\author{Author One, Author Two}
+\maketitle
+\begin{abstract}\input{../content/abstract.tex}\end{abstract}
+\begin{IEEEkeywords}keyword one; keyword two\end{IEEEkeywords}
+\input{../content/content.tex}
+\nocite{example2026}
+\bibliographystyle{plain}
+\bibliography{../references/references}
+\end{document}
+
+
+
+

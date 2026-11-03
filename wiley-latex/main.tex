@@ -1,0 +1,31 @@
+\documentclass[ASNA,twocolumn]{USG}
+\usepackage{anyfontsize}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\graphicspath{{./images/}}
+\newcommand{\paperSubfigure}[4]{\subfloat[#3\label{#4}]{\includegraphics[width=#1]{#2}}}
+\articletype{ORIGINAL ARTICLE}
+\journal{Journal Name}
+\volume{0}
+\copyyear{2026}
+\startpage{1}
+\articledoi{}
+\begin{document}
+\title{Manuscript Title}
+\author[1]{Author One}
+\author[1]{Author Two}
+\authormark{AUTHOR et al.}
+\titlemark{MANUSCRIPT TITLE}
+\address[1]{\orgdiv{Department, }\orgname{Institution, }\orgaddress{\city{City, }\country{Country}}}
+\corres{Corresponding Author}
+\keywords{keyword one | keyword two}
+\abstract[ABSTRACT]{\input{../content/abstract.tex}}
+\maketitle
+\input{../content/content.tex}
+\nocite{example2026}
+\bibliographystyle{wileyNJD-Chicago}
+\bibliography{../references/references}
+\end{document}
+
+
+

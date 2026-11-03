@@ -1,0 +1,32 @@
+# Generated LaTeX output
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+*.bcf
+*.run.xml
+
+# Editors and local tooling
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local/private materials
+.env
+.env.*
+private/
+drafts/
+submitting/
+
+# Local project skills and template-generated artifacts
+.agents/
+*.abs
+*.pag

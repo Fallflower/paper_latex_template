@@ -1,0 +1,28 @@
+\documentclass[a4paper,fleqn]{cas-dc}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{balance}
+\usepackage{microtype}
+\usepackage{subcaption}
+\newcommand{\paperSubfigure}[4]{\begin{subfigure}[b]{#1}\centering\includegraphics[width=\linewidth]{#2}\caption{#3}\label{#4}\end{subfigure}}
+\usepackage[numbers]{natbib}
+\RequirePackage[colorlinks]{hyperref}
+\begin{document}
+\let\WriteBookmarks\relax
+\shorttitle{Manuscript Title}
+\shortauthors{Author et al.}
+\title[mode=title]{Manuscript Title}
+\author[1]{Author One}
+\author[1]{Author Two}
+\affiliation[1]{organization={Department, Institution}, city={City}, country={Country}}
+\begin{abstract}\input{../content/abstract.tex}\end{abstract}
+\begin{keywords}\sep keyword one\sep keyword two\end{keywords}
+\maketitle
+\input{../content/content.tex}
+\nocite{example2026}
+\bibliographystyle{cas-model2-names}
+\bibliography{../references/references}
+\end{document}
+
+
+
